@@ -71,7 +71,20 @@ namespace WindowsFormsApp18._1
         }
         public override string ToString()
         {
-            return $"  Rekeningnummer {Rekeningnr} met saldo {Saldo:0.00} ";
+            return $"  Rekeningnummer {Rekeningnr} met saldo {Saldo:0.##} ";
+        }
+        public override bool Equals(object obj)
+        {
+            if (obj == null)
+            {
+                return false;
+            }
+            if (this.GetType() != obj.GetType())
+            {
+                return false;
+            }
+            Rekening eenRekening = (Rekening)obj;
+            return (this.Rekeningnr == eenRekening.Rekeningnr);
         }
     }
 }

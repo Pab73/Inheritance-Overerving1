@@ -45,6 +45,7 @@ namespace WindowsFormsApp18._1
             this.labelRekeningSaldo = new System.Windows.Forms.Label();
             this.labelSpaarRekeningSaldoRente = new System.Windows.Forms.Label();
             this.labelZichtRekeningSaldo = new System.Windows.Forms.Label();
+            this.btnEquals = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // labelRekeningnaam
@@ -192,11 +193,22 @@ namespace WindowsFormsApp18._1
             this.labelZichtRekeningSaldo.Size = new System.Drawing.Size(0, 17);
             this.labelZichtRekeningSaldo.TabIndex = 15;
             // 
+            // btnEquals
+            // 
+            this.btnEquals.Location = new System.Drawing.Point(539, 301);
+            this.btnEquals.Name = "btnEquals";
+            this.btnEquals.Size = new System.Drawing.Size(187, 100);
+            this.btnEquals.TabIndex = 16;
+            this.btnEquals.Text = "Equals";
+            this.btnEquals.UseVisualStyleBackColor = true;
+            this.btnEquals.Click += new System.EventHandler(this.btnEquals_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnEquals);
             this.Controls.Add(this.labelZichtRekeningSaldo);
             this.Controls.Add(this.labelSpaarRekeningSaldoRente);
             this.Controls.Add(this.labelRekeningSaldo);
@@ -239,6 +251,7 @@ namespace WindowsFormsApp18._1
         private System.Windows.Forms.Label labelRekeningSaldo;
         private System.Windows.Forms.Label labelSpaarRekeningSaldoRente;
         private System.Windows.Forms.Label labelZichtRekeningSaldo;
+        private System.Windows.Forms.Button btnEquals;
     }
 }
 
